@@ -15,6 +15,5 @@ use
 
     from trans007 import GoogleTranslate
     trans = GoogleTranslate()
-    input = "Hello World"
-    output = trans.translate(input)
-    print(output)
+    # trans = GoogleTranslate(proxies={'https': '127.0.0.1:7890'})
+    print(trans.translate("Hello World", 'en', 'zh-CN'))
